@@ -32,10 +32,14 @@ const _$ItemTypeEnumMap = {
   ItemType.weapon: 'weapon',
   ItemType.armor: 'armor',
   ItemType.consumable: 'consumable',
+  ItemType.accessory: 'accessory',
+  ItemType.misc: 'misc',
 };
 
 const _$ItemRarityEnumMap = {
   ItemRarity.common: 'common',
   ItemRarity.uncommon: 'uncommon',
   ItemRarity.rare: 'rare',
+  ItemRarity.legendary: 'legendary',
+  ItemRarity.epic: 'epic',
 };

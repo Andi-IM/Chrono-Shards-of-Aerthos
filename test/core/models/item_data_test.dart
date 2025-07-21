@@ -292,7 +292,7 @@ void main() {
 
   group('ItemType enum', () {
     test('should have correct values', () {
-      expect(ItemType.values.length, equals(3));
+      expect(ItemType.values.length, equals(5));
       expect(ItemType.values, contains(ItemType.weapon));
       expect(ItemType.values, contains(ItemType.armor));
       expect(ItemType.values, contains(ItemType.consumable));
@@ -301,7 +301,7 @@ void main() {
 
   group('ItemRarity enum', () {
     test('should have correct values', () {
-      expect(ItemRarity.values.length, equals(3));
+      expect(ItemRarity.values.length, equals(5));
       expect(ItemRarity.values, contains(ItemRarity.common));
       expect(ItemRarity.values, contains(ItemRarity.uncommon));
       expect(ItemRarity.values, contains(ItemRarity.rare));
