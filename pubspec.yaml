@@ -12,6 +12,7 @@ dependencies:
   json_annotation: ^4.8.1
   http: ^1.2.1  # opsional, tapi ditulis seperti di requirement
   bloc: ^8.1.4
+  file: ^7.0.0 # Untuk mock file system
   equatable: ^2.0.5 
 
 dev_dependencies:

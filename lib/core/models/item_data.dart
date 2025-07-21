@@ -3,9 +3,9 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'item_data.g.dart';
 
-enum ItemType { weapon, armor, consumable }
+enum ItemType { weapon, armor, consumable, accessory, misc }
 
-enum ItemRarity { common, uncommon, rare }
+enum ItemRarity { common, uncommon, rare, legendary, epic }
 
 @JsonSerializable(explicitToJson: true)
 class ItemData {
