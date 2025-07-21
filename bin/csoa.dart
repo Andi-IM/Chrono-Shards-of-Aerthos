@@ -1,5 +1,8 @@
-import 'package:csoa/csoa.dart' as csoa;
+import 'package:csoa/features/game_session/view/game_view.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${csoa.calculate()}!');
+  print('Welcome to Chrono Shards of Aerthos!');
+
+  final game = GameView();
+  game.build();
 }

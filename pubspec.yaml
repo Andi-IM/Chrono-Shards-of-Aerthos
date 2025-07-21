@@ -8,8 +8,14 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  # path: ^1.8.0
+  args: ^2.4.2
+  json_annotation: ^4.8.1
+  http: ^1.2.1  # opsional, tapi ditulis seperti di requirement
+  bloc: ^8.1.4
+  equatable: ^2.0.5 
 
 dev_dependencies:
   lints: ^5.0.0
   test: ^1.24.0
+  build_runner: ^2.4.8
+  json_serializable: ^6.8.0
