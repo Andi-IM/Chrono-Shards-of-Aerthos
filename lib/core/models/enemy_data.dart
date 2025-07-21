@@ -5,9 +5,5 @@ class EnemyData {
   final String name;
   final CharacterData stats;
 
-  const EnemyData({
-    required this.id,
-    required this.name,
-    required this.stats,
-  });
+  const EnemyData({required this.id, required this.name, required this.stats});
 }

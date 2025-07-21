@@ -78,6 +78,30 @@ csoa/
 
 ## ⚙️ Fitur Development
 
+### Pre-Commit Hook Setup
+
+Proyek ini dilengkapi dengan **pre-commit hook** yang otomatis menjalankan pemeriksaan kualitas kode sebelum setiap commit:
+
+- ✅ `dart pub get` - Update dependencies
+- ✅ `dart analyze` - Static analysis
+- ✅ `dart format` - Code formatting
+- ✅ `dart test` - Unit tests
+
+#### Cara Menggunakan:
+```bash
+# Commit normal - hook akan berjalan otomatis
+git add .
+git commit -m "Your message"
+
+# Test hook secara manual
+.\test_precommit.bat
+
+# Kelola hook (aktifkan/nonaktifkan)
+.\manage_precommit.bat
+```
+
+📖 **Dokumentasi lengkap**: [README.md](/scripts/precommit/README.md)
+
 ### Contoh Perintah CLI (sementara)
 
 ```bash

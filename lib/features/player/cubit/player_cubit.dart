@@ -8,14 +8,16 @@ class PlayerCubit extends Cubit<PlayerState> {
   final FormulaEngine _formulaEngine;
 
   PlayerCubit({required FormulaEngine formulaEngine})
-      : _formulaEngine = formulaEngine,
-        super(const PlayerState(
+    : _formulaEngine = formulaEngine,
+      super(
+        const PlayerState(
           level: 1,
           xp: 0,
           hp: 100,
           stats: CharacterData(),
           equipment: {},
-        ));
+        ),
+      );
 
   void addXp(int amount) {
     // Logika penambahan XP dan pengecekan level up akan ada di sini.

@@ -7,8 +7,8 @@ class InventoryCubit extends Cubit<InventoryState> {
   final ContentManager _contentManager;
 
   InventoryCubit({required ContentManager contentManager})
-      : _contentManager = contentManager,
-        super(const InventoryState(items: {}, currency: 0));
+    : _contentManager = contentManager,
+      super(const InventoryState(items: {}, currency: 0));
 
   void addItem(String itemId, int quantity) {
     // Logika penambahan item ke inventaris.

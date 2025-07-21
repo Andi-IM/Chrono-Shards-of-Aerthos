@@ -14,14 +14,16 @@ class CombatCubit extends Cubit<CombatState> {
     required FormulaEngine formulaEngine,
     required PlayerCubit playerCubit,
     required List<EnemyData> enemies,
-  })  : _formulaEngine = formulaEngine,
-        _playerCubit = playerCubit,
-        super(CombatState(
-          turn: 1,
-          enemies: enemies,
-          enemyIntentions: {},
-          isPlayerTurn: true,
-        ));
+  }) : _formulaEngine = formulaEngine,
+       _playerCubit = playerCubit,
+       super(
+         CombatState(
+           turn: 1,
+           enemies: enemies,
+           enemyIntentions: {},
+           isPlayerTurn: true,
+         ),
+       );
 
   void playerAttack(String targetId) {
     // Logika serangan pemain ke target.
