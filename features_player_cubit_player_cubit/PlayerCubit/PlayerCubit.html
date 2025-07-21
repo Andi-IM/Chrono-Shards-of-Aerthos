@@ -67,11 +67,26 @@
   : _formulaEngine = formulaEngine,
     super(
       const PlayerState(
+        name: &quot;The Scribe&quot;,
         level: 1,
         xp: 0,
         hp: 100,
-        stats: CharacterData(),
+        maxHp: 100,
+        stamina: 50,
+        maxStamina: 50,
+        stats: CharacterData(
+          strength: 8,
+          dexterity: 12,
+          intelligence: 15,
+          defense: 6,
+          luck: 9,
+          hp: 100,
+          stamina: 50,
+        ),
+        inventory: [],
         equipment: {},
+        skills: [&quot;temporal_stutter&quot;],
+        currentLocationId: &quot;library_entrance&quot;,
       ),
     );</code></pre>
 </section>

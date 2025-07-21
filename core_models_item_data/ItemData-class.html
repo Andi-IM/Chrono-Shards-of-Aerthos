@@ -55,17 +55,44 @@
     
 
 
+    <section>
+      <dl class="dl-horizontal">
+        
+
+        
+        
+
+
+        
+        
+  <dt>Annotations</dt>
+  <dd>
+    <ul class="annotation-list clazz-relationships">
+        <li>@<a href="https://pub.dev/documentation/json_annotation/4.9.0/json_annotation/JsonSerializable-class.html">JsonSerializable</a>(explicitToJson: true)</li>
+    </ul>
+  </dd>
+
+
+      </dl>
+    </section>
 
     
   <section class="summary offset-anchor" id="constructors">
     <h2>Constructors</h2>
     <dl class="constructor-summary-list">
         <dt id="ItemData.new" class="callable">
-          <span class="name"><a href="../core_models_item_data/ItemData/ItemData.html">ItemData.new</a></span><span class="signature">({<span class="parameter" id="-param-id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span> <span class="parameter-name">id</span>, </span><span class="parameter" id="-param-name"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>})</span>
+          <span class="name"><a href="../core_models_item_data/ItemData/ItemData.html">ItemData.new</a></span><span class="signature">({<span class="parameter" id="-param-id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span> <span class="parameter-name">id</span>, </span><span class="parameter" id="-param-name"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span><span class="parameter" id="-param-type"><span>required</span> <span class="type-annotation"><a href="../core_models_item_data/ItemType.html">ItemType</a></span> <span class="parameter-name">type</span>, </span><span class="parameter" id="-param-rarity"><span>required</span> <span class="type-annotation"><a href="../core_models_item_data/ItemRarity.html">ItemRarity</a></span> <span class="parameter-name">rarity</span>, </span><span class="parameter" id="-param-effects"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core_models_effect_data/EffectData-class.html">EffectData</a></span>&gt;</span></span> <span class="parameter-name">effects</span>, </span><span class="parameter" id="-param-description"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span> <span class="parameter-name">description</span>, </span><span class="parameter" id="-param-value"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span>})</span>
         </dt>
         <dd>
           
             <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="ItemData.fromJson" class="callable">
+          <span class="name"><a href="../core_models_item_data/ItemData/ItemData.fromJson.html">ItemData.fromJson</a></span><span class="signature">(<span class="parameter" id="fromJson-param-json"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">json</span></span>)</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
         </dd>
     </dl>
   </section>
@@ -75,6 +102,30 @@
       id="instance-properties">
     <h2>Properties</h2>
     <dl class="properties">
+        <dt id="description" class="property">
+  <span class="name"><a href="../core_models_item_data/ItemData/description.html">description</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="effects" class="property">
+  <span class="name"><a href="../core_models_item_data/ItemData/effects.html">effects</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.8.2/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core_models_effect_data/EffectData-class.html">EffectData</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
         <dt id="hashCode" class="property inherited">
   <span class="name"><a href="https://api.dart.dev/stable/3.8.2/dart-core/Object/hashCode.html">hashCode</a></span>
   <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span>
@@ -111,6 +162,18 @@
 
 </dd>
 
+        <dt id="rarity" class="property">
+  <span class="name"><a href="../core_models_item_data/ItemData/rarity.html">rarity</a></span>
+  <span class="signature">&#8594; <a href="../core_models_item_data/ItemRarity.html">ItemRarity</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
         <dt id="runtimeType" class="property inherited">
   <span class="name"><a href="https://api.dart.dev/stable/3.8.2/dart-core/Object/runtimeType.html">runtimeType</a></span>
   <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.8.2/dart-core/Type-class.html">Type</a></span>
@@ -123,12 +186,36 @@
 
 </dd>
 
+        <dt id="type" class="property">
+  <span class="name"><a href="../core_models_item_data/ItemData/type.html">type</a></span>
+  <span class="signature">&#8594; <a href="../core_models_item_data/ItemType.html">ItemType</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="value" class="property">
+  <span class="name"><a href="../core_models_item_data/ItemData/value.html">value</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
     </dl>
   </section>
 
     
   <section
-      class="summary offset-anchor inherited"
+      class="summary offset-anchor"
       id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
@@ -142,6 +229,19 @@
 <dd class="inherited">
   Invoked when a nonexistent method or property is accessed.
   <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toJson" class="callable">
+  <span class="name"><a href="../core_models_item_data/ItemData/toJson.html">toJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.8.2/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.8.2/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
 
 </dd>
 

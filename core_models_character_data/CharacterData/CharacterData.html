@@ -54,7 +54,14 @@
 
     <section class="multi-line-signature">
       const
-      <span class="name ">CharacterData</span>(<wbr>)
+      <span class="name ">CharacterData</span>(<wbr>{<ol class="parameter-list"> <li><span class="parameter" id="-param-strength"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">strength</span> = <span class="default-value">10</span>, </span></li>
+<li><span class="parameter" id="-param-dexterity"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">dexterity</span> = <span class="default-value">10</span>, </span></li>
+<li><span class="parameter" id="-param-intelligence"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">intelligence</span> = <span class="default-value">10</span>, </span></li>
+<li><span class="parameter" id="-param-defense"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">defense</span> = <span class="default-value">10</span>, </span></li>
+<li><span class="parameter" id="-param-luck"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">luck</span> = <span class="default-value">10</span>, </span></li>
+<li><span class="parameter" id="-param-hp"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">hp</span> = <span class="default-value">100</span>, </span></li>
+<li><span class="parameter" id="-param-stamina"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.8.2/dart-core/int-class.html">int</a></span> <span class="parameter-name">stamina</span> = <span class="default-value">50</span>, </span></li>
+</ol>})
     </section>
     
 
@@ -62,7 +69,15 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">const CharacterData();</code></pre>
+  <pre class="language-dart"><code class="language-dart">const CharacterData({
+  this.strength = 10,
+  this.dexterity = 10,
+  this.intelligence = 10,
+  this.defense = 10,
+  this.luck = 10,
+  this.hp = 100,
+  this.stamina = 50,
+});</code></pre>
 </section>
 
 
