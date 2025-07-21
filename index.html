@@ -130,6 +130,26 @@ dart test --coverage=coverage
 </code></pre>
 <hr>
 <h2 id="-fitur-development">⚙️ Fitur Development</h2>
+<h3 id="pre-commit-hook-setup">Pre-Commit Hook Setup</h3>
+<p>Proyek ini dilengkapi dengan <strong>pre-commit hook</strong> yang otomatis menjalankan pemeriksaan kualitas kode sebelum setiap commit:</p>
+<ul>
+<li>✅ <code>dart pub get</code> - Update dependencies</li>
+<li>✅ <code>dart analyze</code> - Static analysis</li>
+<li>✅ <code>dart format</code> - Code formatting</li>
+<li>✅ <code>dart test</code> - Unit tests</li>
+</ul>
+<h4 id="cara-menggunakan">Cara Menggunakan:</h4>
+<pre class="language-bash"><code class="language-bash"># Commit normal - hook akan berjalan otomatis
+git add .
+git commit -m "Your message"
+
+# Test hook secara manual
+.\test_precommit.bat
+
+# Kelola hook (aktifkan/nonaktifkan)
+.\manage_precommit.bat
+</code></pre>
+<p>📖 <strong>Dokumentasi lengkap</strong>: <a href="/scripts/precommit/README.md">README.md</a></p>
 <h3 id="contoh-perintah-cli-sementara">Contoh Perintah CLI (sementara)</h3>
 <pre class="language-bash"><code class="language-bash">&gt; look
 &gt; go north
@@ -183,8 +203,106 @@ Repositori ini menggunakan lisensi open-source MIT.</p>
       <section class="summary">
           <h2>Libraries</h2>
         <dl>
-          <dt id="csoa">
-  <span class="name"><a href="csoa/">csoa</a></span> 
+          <dt id="character_data">
+  <span class="name"><a href="core_models_character_data/">core/models/character_data</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="enemy_data">
+  <span class="name"><a href="core_models_enemy_data/">core/models/enemy_data</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="item_data">
+  <span class="name"><a href="core_models_item_data/">core/models/item_data</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="content_manager">
+  <span class="name"><a href="core_services_content_manager/">core/services/content_manager</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="formula_engine">
+  <span class="name"><a href="core_services_formula_engine/">core/services/formula_engine</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="combat_cubit">
+  <span class="name"><a href="features_combat_cubit_combat_cubit/">features/combat/cubit/combat_cubit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="combat_state">
+  <span class="name"><a href="features_combat_cubit_combat_state/">features/combat/cubit/combat_state</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="combat_display">
+  <span class="name"><a href="features_combat_view_combat_display/">features/combat/view/combat_display</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="game_cubit">
+  <span class="name"><a href="features_game_session_cubit_game_cubit/">features/game_session/cubit/game_cubit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="game_state">
+  <span class="name"><a href="features_game_session_cubit_game_state/">features/game_session/cubit/game_state</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="game_view">
+  <span class="name"><a href="features_game_session_view_game_view/">features/game_session/view/game_view</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="inventory_cubit">
+  <span class="name"><a href="features_inventory_cubit_inventory_cubit/">features/inventory/cubit/inventory_cubit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="inventory_state">
+  <span class="name"><a href="features_inventory_cubit_inventory_state/">features/inventory/cubit/inventory_state</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="player_cubit">
+  <span class="name"><a href="features_player_cubit_player_cubit/">features/player/cubit/player_cubit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="player_state">
+  <span class="name"><a href="features_player_cubit_player_state/">features/player/cubit/player_state</a></span> 
 
 </dt>
 <dd>
@@ -207,7 +325,21 @@ Repositori ini menggunakan lisensi open-source MIT.</p>
     <h5 class="hidden-xs"><span class="package-name">csoa</span> <span class="package-kind">package</span></h5>
     <ol>
       <li class="section-title">Libraries</li>
-      <li><a href="csoa/">csoa</a></li>
+      <li><a href="core_models_character_data/">core/models/character_data</a></li>
+      <li><a href="core_models_enemy_data/">core/models/enemy_data</a></li>
+      <li><a href="core_models_item_data/">core/models/item_data</a></li>
+      <li><a href="core_services_content_manager/">core/services/content_manager</a></li>
+      <li><a href="core_services_formula_engine/">core/services/formula_engine</a></li>
+      <li><a href="features_combat_cubit_combat_cubit/">features/combat/cubit/combat_cubit</a></li>
+      <li><a href="features_combat_cubit_combat_state/">features/combat/cubit/combat_state</a></li>
+      <li><a href="features_combat_view_combat_display/">features/combat/view/combat_display</a></li>
+      <li><a href="features_game_session_cubit_game_cubit/">features/game_session/cubit/game_cubit</a></li>
+      <li><a href="features_game_session_cubit_game_state/">features/game_session/cubit/game_state</a></li>
+      <li><a href="features_game_session_view_game_view/">features/game_session/view/game_view</a></li>
+      <li><a href="features_inventory_cubit_inventory_cubit/">features/inventory/cubit/inventory_cubit</a></li>
+      <li><a href="features_inventory_cubit_inventory_state/">features/inventory/cubit/inventory_state</a></li>
+      <li><a href="features_player_cubit_player_cubit/">features/player/cubit/player_cubit</a></li>
+      <li><a href="features_player_cubit_player_state/">features/player/cubit/player_state</a></li>
 </ol>
 
   </div>
